@@ -369,6 +369,11 @@ form input {
     font-size: 1rem;
     margin-top: 8px;
 }
+
+input {
+    z-index: 1;
+}
+
 form textarea {
     width: 300px;
     padding: 10px 15px;
@@ -482,6 +487,7 @@ form textarea {
     position: relative;
     margin: 0px;
     padding: 0px;
+    z-index: -100;
 }
 
 .blobs {
