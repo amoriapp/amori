@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-text-color: #1C2745;
     --main-accent-color: #A946F3;
@@ -10,7 +14,7 @@
 body {
     font-family: Poppins, Helvetica, Arial, sans-serif;
     color: var(--main-text-color);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h1 {
@@ -152,7 +156,7 @@ li {
 }
 
 .app-store1 {
-    width: 230px;
+    width: 240px;
 }
 
 .app-store::before,
@@ -203,7 +207,8 @@ li {
 
 /* how it works */
 #how {
-    padding-top: 32px;
+    padding-top: 156px;
+    margin-top: -100px;
     margin-bottom: 64px;
     text-align: center;
 }
@@ -268,7 +273,8 @@ li {
 
 /* testimonial */
 #testimonials {
-    padding-top: 32px;
+    padding-top: 156px;
+    margin-top: -100px;
 }
 
 #testimonial-grid {
@@ -613,7 +619,7 @@ form textarea {
         display: none;
     }
     body {
-      font-size: 14px;
+      font-size: 12px;
       text-align: center;
     }
     .main-content {
@@ -657,12 +663,12 @@ form textarea {
 
 
     .app-link{
-        max-width: 200px;
+        max-width: 240px;
         margin: auto;
     }
 
     .app-link1 {
-        max-width: 230px;
+        max-width: 240px;
         margin: auto;
     }
 
