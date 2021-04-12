@@ -163,7 +163,8 @@ li {
     color: #2D2B36;
     border: solid 2px transparent;
     border-radius: 50px;
-    width: 200px;
+    /* width: 200px; */
+    padding: inherit;
     position: relative;
     transition: 0.3s;
 }
