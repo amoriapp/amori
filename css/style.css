@@ -161,7 +161,7 @@ li {
 }
 
 .app-store1 {
-    width: 240px;
+    width: 235px;
 }
 
 .app-store::before,
@@ -190,7 +190,6 @@ li {
 .app-store-content::before,
 .app-store-content1::before {
     font-family: "Icofont";
-    float: left;
     margin-right: 10px;
     margin-top: -2px;
     content: "\e8a7";
@@ -231,7 +230,7 @@ li {
     grid-template-columns: 1fr 500px;
 }
 #step1 {
-    max-width: 300px;
+    max-width: 280px;
 }
 
 #step2 {
@@ -291,7 +290,7 @@ li {
     flex-flow: row wrap;
     justify-content: space-around;
     text-align: center;
-    grid-row-gap: 56px;
+    grid-row-gap: 64px;
     
 }
 
@@ -309,9 +308,9 @@ li {
 }
 
 /* mail */
-#mail {
+#mail, #mission {
     margin: auto;
-    padding: 160px 0;
+    padding: 120px 0;
     width: 100%;
     background: rgb(240,242,255);
     background: linear-gradient(0deg, rgba(240,242,255,0) 0%, rgba(240,242,255,1) 100%);
@@ -365,6 +364,7 @@ li {
 
 #mission-header p {
     margin-bottom: 40px;
+    padding: 0 56px;
 }
 
 /* contact page */
@@ -667,10 +667,10 @@ body {
     .app-store1 {
         margin: 0;
     }
-
+    
 
     .app-link{
-        max-width: 240px;
+        max-width: 220px;
         margin: auto;
     }
 
@@ -689,7 +689,11 @@ body {
     order: -1;
     margin: auto;
     margin-top: 80px;
-    max-width: 270px;
+    max-width: 280px;
+}
+
+#step1 {
+    max-width: 220px;
 }
 
 .stepnumber {
@@ -729,6 +733,14 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
+}
+
+#mission-header {
+    padding-bottom: 80px;
+}
+
+#mission-header p {
+    padding: 0 8px;
 }
 
 .mission-download {
