@@ -173,6 +173,10 @@ li {
     /*width: 235px;*/
 }
 
+.col-8 {
+    width: 65%
+}
+
 .app-store::before,
 .app-store1::before {
     content: '';
