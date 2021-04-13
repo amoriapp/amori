@@ -170,7 +170,11 @@ li {
 }
 
 .app-store1 {
-    width: 235px;
+    /*width: 235px;*/
+}
+
+.col-8 {
+    width: 65%
 }
 
 .app-store::before,
@@ -210,7 +214,8 @@ li {
 }
 
 .app-store-content1 {
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
+    font-size: 200%;
     margin: 0px;
 }
 
