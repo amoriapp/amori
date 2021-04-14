@@ -644,9 +644,12 @@ body {
     }
 
     .navbar-light .navbar-nav .nav-link,.navbar-light .navbar-nav .nav-link:hover  {
-        margin-right: 16px;
+        margin: 12px 0;
     }
 
+    .nav-item:first-of-type {
+        margin-top: 24px;
+    }
 
     #header {
         display: grid;
