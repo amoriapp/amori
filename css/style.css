@@ -723,6 +723,10 @@ body {
     padding-bottom: 100px;
 }
 
+.testimonial-cell {
+    margin-bottom: 40px;
+}
+
 #mail {
     padding: 32px 24px;
 }
