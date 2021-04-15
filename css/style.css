@@ -704,9 +704,8 @@ body {
         order: -1;
     }
 
-    .download,
     .app-store1 {
-        margin: 0;
+        margin: auto;
     }
     
 
@@ -716,8 +715,7 @@ body {
     }
 
     .app-link1 {
-        max-width: 240px;
-        margin: auto;
+        
     }
 
     .step-left,
