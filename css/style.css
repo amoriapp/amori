@@ -34,7 +34,6 @@ h1 {
 
 .highlight {
     color: var(--main-accent-color);
-    position: absolute;
 }
 
 .highlight::before {
