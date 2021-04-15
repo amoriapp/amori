@@ -36,8 +36,8 @@ h1 {
     color: var(--main-accent-color);
 }
 
-.highlight::before {
-    content: "Vulnerable";
+span::before {
+    content: "Deeper";
     animation: animate infinite 8s;
     padding-left: 10px;
 }
