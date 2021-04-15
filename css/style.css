@@ -36,6 +36,28 @@ h1 {
     color: var(--main-accent-color);
 }
 
+.highlight::before {
+    content: "Vulnerable";
+    animation: animate infinite 8s;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Deeper";
+    }
+
+    50% {
+        content: "Meaningful";
+    }
+
+    75% {
+        content: "Real";
+    }
+}
+
+
 h2 {
     font-weight: 600;
     font-size: 3em;
