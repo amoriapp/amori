@@ -52,7 +52,7 @@ h1 {
 }
 
 .highlight::before {
-    content: "";
+    content: "Deeper";
     animation: animate infinite 8s;
     padding-left: 10px;
 }
