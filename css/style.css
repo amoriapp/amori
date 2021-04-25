@@ -35,10 +35,10 @@ h1 {
 .highlight {
     color: var(--main-accent-color);
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #A946F3; /* The typwriter cursor */
+    border-right: .12em solid #A946F3; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.05em; /* Adjust as needed */
+    letter-spacing: 0.01em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
