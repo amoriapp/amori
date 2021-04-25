@@ -514,12 +514,20 @@ form textarea {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.fab {
+    font-size: 18px;
+    padding-right: 12px;
+    color: var(--main-accent-color);
 }
 
 #copyright {
     text-align: center;
     color: #bbbbbb;
     font-size: 10px;
+    padding-bottom: 24px;
 }
 
 #privacy,
@@ -530,6 +538,9 @@ form textarea {
     float: none;
     margin-right: 10px;
     color: var(--main-accent-color);
+}
+#terms {
+    padding-right: 24px;
 }
 
 /* blob code */

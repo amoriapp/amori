@@ -28,6 +28,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="icofont/icofont.min.css">
 
+    <!-- fa -->
+    <link href="css/all.css" rel="stylesheet">
+    <!--load all styles -->
+
     <!-- bootstrap -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -79,8 +83,8 @@
 
                         <li class="download">
                             <a href="" class="app-link">
-                                <div class="app-store1">
-                                    <p class="app-store-content1">Download&nbsp;on&nbsp;iOS
+                                <div class="app-store">
+                                    <p class="app-store-content">Download&nbsp;on&nbsp;iOS
                                     </p>
 
                                 </div>
@@ -125,6 +129,12 @@
                 <a href="terms.html" id="terms">Terms &amp; Conditions</a>
             </div>
             <div class="footer-right">
+                <a href="https://www.instagram.com/amoridating/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/amoridating" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
                 <a href="contact.html" id="contact">Contact us</a>
             </div>
         </footer>
@@ -135,44 +145,6 @@
 
 
     </div> <!-- end of main container -->
-
-
-
-
-
-    <!-- smooth scroll -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-
-    </script>
-    <script>
-        /* don't touch this */
-
-    </script>
 
 
     <!-- bootstrap -->
