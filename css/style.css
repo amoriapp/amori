@@ -34,6 +34,21 @@ h1 {
 
 .highlight {
     color: var(--main-accent-color);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #A946F3; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.05em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #A946F3; }
 }
 
 .highlight::before {
@@ -44,17 +59,15 @@ h1 {
 
 @keyframes animate {
 
-    0% {
-        content: "Deeper";
-    }
+    3% { content: "D"; } 6% { content: "De"; } 9% { content: "Dee"; } 12% { content: "Deep" } 15% { content: "Deepe" } 18% { content: "Deeper" }
+    28% { content: "Deeper"; } 29% { content: "Deepe"; } 30% { content: "Deep"; } 31% { content: "De" } 32% { content: "" }
 
-    50% {
-        content: "Meaningful";
-    }
+    36% { content: "M"; } 38% { content: "Me"; } 40% { content: "Mea"; } 42% { content: "Mean" } 44% { content: "Meani" } 46% { content: "Meanin" } 48% { content: "Meaning" } 50% { content: "Meaningf" } 52% { content: "Meaningfu" } 54% { content: "Meaningful" }
+    64% { content: "Meaningful"; } 65% { content: "Meaningfu"; } 66% { content: "Meaning" } 67% { content: "Meanin" } 68% { content: "Mea" } 69% { content: "M" } 70% { content: "" }
 
-    75% {
-        content: "Real";
-    }
+    74% { content: "R"; } 77% { content: "Re"; } 80% { content: "Rea"; } 83% { content: "Real" }
+    96% { content: "Real"; } 97% { content: "Rea"; } 98% { content: "Re"; } 99% { content: "R" } 100% { content: "" }
+
 }
 
 
