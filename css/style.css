@@ -57,6 +57,10 @@ h1 {
     padding-left: 10px;
 }
 
+.italic {
+    font-style: italic;
+}
+
 @keyframes animate {
 
     3% { content: "D"; } 6% { content: "De"; } 9% { content: "Dee"; } 12% { content: "Deep" } 15% { content: "Deepe" } 18% { content: "Deeper" }
