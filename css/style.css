@@ -413,7 +413,7 @@ li {
 #qr {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -421,7 +421,7 @@ li {
 #qr .qr-text {
     justify-self: end;
     align-self: center;
-    text-align: right;
+    text-align: left;
 
 }
 
@@ -432,10 +432,11 @@ li {
     background: -webkit-linear-gradient(70deg, #ff129b, #8727ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 1.1em;
+    line-height: 1.2em;
 }
 
 #qr .qr-text .scan span {
+    text-size: 0.9em;
     background: none;
     color: black;
     -webkit-background-clip: none;
