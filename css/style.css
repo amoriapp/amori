@@ -365,7 +365,7 @@ li {
 /* mail */
 #mail, #mission {
     margin: auto;
-    padding: 120px 0;
+    padding-top: 120px;
     width: 100%;
     background: rgb(240,242,255);
     background: linear-gradient(0deg, rgba(240,242,255,0) 0%, rgba(240,242,255,1) 100%);
@@ -407,6 +407,44 @@ li {
     color: #ffffff;
     border: none;
     border-radius: 100px;
+}
+
+/* qr code section */
+#qr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#qr .qr-text {
+    justify-self: end;
+    align-self: center;
+    text-align: right;
+
+}
+
+#qr .qr-text .scan{
+    font-size: 4em;
+    font-weight: 700;
+    max-width: 250px;
+    background: -webkit-linear-gradient(70deg, #ff129b, #8727ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1em;
+}
+
+#qr .qr-text .scan span {
+    background: none;
+    color: black;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #ffffff;
+}
+
+#qr .code {
+    max-width: 200px;
+
 }
 
 /* mission page */
@@ -526,6 +564,7 @@ form textarea {
 
 /* footer */
 #footer-links {
+    padding-top: 120px;
     width: 70%;
     margin: auto;
     display: flex;
@@ -797,6 +836,35 @@ body {
 
 #mc-embedded-subscribe {
     font-size: 16px;
+}
+
+#qr {
+    grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+    justify-items: center;
+    align-items: center;
+}
+
+#qr .qr-text {
+    justify-self: center;
+    text-align: center;
+}
+
+#qr .qr-text .scan{
+    font-size: 3em;
+    font-weight: 700;
+    max-width: 250px;
+    background: -webkit-linear-gradient(70deg, #ff129b, #8727ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2em;
+}
+
+#qr .qr-text .scan span {
+    background: none;
+    color: black;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #ffffff;
 }
 
 #footer-links {
