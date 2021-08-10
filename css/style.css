@@ -278,7 +278,7 @@ li {
     margin: auto;
     margin-bottom: 144px;
     grid-template-columns: 500px 1fr;
-    grid-column-gap: 80px;
+    grid-column-gap: 56px;
     text-align: left;
 }
 .step-right {
@@ -300,6 +300,10 @@ li {
     max-width: 350px;
 }
 
+#step5 {
+    max-width: 450px;
+}
+
 .stepname {
     margin-top: 40px;
     display: grid;
@@ -316,18 +320,18 @@ li {
     border-radius: 100%;
     text-align: center;
     padding-top: 10px;
-    margin-right: 40px;
+    margin-right: 24px;
 }
 
 .steptext {
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .stepdescription {
     font-size: 1.5em;
     font-weight: 400;
     margin-top: 16px;
-    margin-left: 96px;
+    margin-left: 80px;
 }
 
 /* testimonial */
@@ -794,7 +798,7 @@ body {
     max-width: 600px;
     }
 
-#step1, #step2, #step3, #step4 {
+#step1, #step2, #step3, #step4, #step5 {
     order: -1;
     margin: auto;
     margin-top: 80px;
@@ -803,6 +807,10 @@ body {
 
 #step1 {
     max-width: 220px;
+}
+
+#step5 {
+    max-width: 420px;
 }
 
 .stepnumber {
