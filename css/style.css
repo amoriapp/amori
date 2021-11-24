@@ -85,7 +85,7 @@ h2 {
 
 h3 {
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.4em;
     margin-bottom: 48px;
 }
@@ -399,7 +399,7 @@ li {
 }
 
 #mc-embedded-subscribe {
-    font-size: 1.125em;
+    font-size: 1.4em;
     width: 160px;
     height: 50px;
     -webkit-appearance: none;
@@ -467,6 +467,99 @@ li {
     padding: 0 56px;
 }
 
+/* careers page */
+
+#careers-menu {
+    box-shadow: none;
+    background-color: #ffffff;
+    padding: 24px 72px;
+    margin-bottom: px;
+}
+
+.careers-container {
+    font-size: 18px;
+    margin-bottom: 64px;
+}
+.careers-content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+
+#careers-header {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.careers-subhead {
+    margin-bottom: 16px;
+}
+
+.position-name {
+    font-weight: 500;;
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: var(--main-accent-color)
+}
+.position-location {
+    font-size: 18px;
+}
+
+.position-apply {
+    background-color: var(--main-accent-color);
+    padding: 12px 24px;
+    border-radius: 100px;
+}
+
+.position-apply a {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.position-info {
+    text-align: left;
+
+}
+
+.position-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 900px) {
+    #careers-header {
+        font-size: 40px;
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+
+    .position-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .position-apply {
+        display: none;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 8px 20px;
+        margin-top: 12px;
+        width: fit-content;
+    }
+}
+
+
 /* contact page */
 
 form {
@@ -517,8 +610,8 @@ form textarea {
 
 #privacy-policy,
 #terms-conditions {
-    padding: 0px 12vw;
-    text-align: center;
+    padding: 0px 8px;
+    text-align: left;
     line-height: 2.4em;
     margin-bottom: 100px;
 }
@@ -580,6 +673,17 @@ form textarea {
     font-size: 14px;
 }
 
+.footer-left {
+    text-align: left;
+    max-width: 50vw;
+}
+
+
+.footer-right {
+    text-align: right;
+    max-width: 50vw;
+}
+
 .fab {
     font-size: 18px;
     padding-right: 12px;
@@ -593,17 +697,28 @@ form textarea {
     padding-bottom: 24px;
 }
 
+#copyright p {
+    padding-bottom: 8px;
+}
+
+
+
 #privacy,
 #terms,
-#contact {
+#careers {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     float: none;
-    margin-right: 10px;
+    padding: 8px 10px;
     color: var(--main-accent-color);
 }
-#terms {
-    padding-right: 24px;
+
+#contact {
+    display: inline-block;
+    text-align: right;
+    float: none;
+    padding: 8px 10px;
+    color: var(--main-accent-color);
 }
 
 /* blob code */
