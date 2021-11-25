@@ -515,15 +515,18 @@ li {
     border-color: var(--main-accent-color);
     padding: 12px 24px;
     border-radius: 100px;
-}
-
-.position-apply a {
+    color: var(--main-accent-color);
     font-size: 1.2em;
     line-height: 1.6em;
-    color: var(--main-accent-color);
     font-weight: 500;
-    margin: 0;
-    padding: 0;
+}
+
+.position-apply:hover {
+    border: 3px solid;
+    background-color: var(--main-accent-color);
+    border-color: var(--main-accent-color);
+    color: #ffffff;
+    transition-duration: 0.2s;;
 }
 
 .position-info {
