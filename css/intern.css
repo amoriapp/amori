@@ -663,11 +663,24 @@ li {
   grid-row-gap: 30px;
 }
 
-#mission-title {
+#mission-title,
+#mission-title-small {
   font-size: 4em;
   margin-top: 0px;
   margin-bottom: 20px;
   text-align: left;
+}
+
+@media only screen and (min-width: 901px) {
+  #mission-title-small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #mission-title {
+    display: none;
+  }
 }
 
 .description-cell {
