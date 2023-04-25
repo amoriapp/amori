@@ -641,6 +641,8 @@ li {
 
 /* mission description */
 #mission-description {
+  display: flex;
+  justify-content: center;
   padding-top: 156px;
   padding-bottom: 80px;
   padding-left: 24px;
@@ -770,6 +772,7 @@ li {
 
 /* main header */
 #main-header {
+  padding: 0 24px;
   text-align: center;
 }
 
@@ -1225,7 +1228,6 @@ form textarea {
     text-align: center;
   }
   .main-content {
-    padding: 0 24px;
     padding-top: 200px;
     padding-bottom: 65px;
   }
