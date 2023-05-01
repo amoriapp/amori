@@ -287,9 +287,7 @@ a:hover {
 
 .main-content {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 40px;
-  padding-top: 200px;
+  padding-top: 140px;
   padding-bottom: 100px;
 }
 
@@ -298,7 +296,7 @@ a:hover {
   /* grid-template-columns: minmax(200px, 440px) 1fr;*/
   justify-content: space-between;
   grid-column-gap: 40px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 #header h1 {
@@ -306,7 +304,7 @@ a:hover {
 }
 
 .header-img {
-  max-width: 600px;
+  max-width: 550px;
 }
 
 #logo {
@@ -325,6 +323,7 @@ a:hover {
 
 .navbar-brand img {
   height: 100%;
+  padding-top: 4px;
 }
 
 .navbar-collapse .nav-link {
@@ -349,38 +348,27 @@ li {
 }
 
 /* app button */
-
-.apply-button-filled-purple {
-  box-sizing: border-box;
-  border-radius: 50px;
-  padding: inherit;
-  position: relative;
-  width: 270px;
-  background: linear-gradient(87.11deg, #b143f6 -29.93%, #884fe6 123.19%);
-  box-shadow: 0px 1px 3px rgba(88, 78, 131, 0.2);
-  color: white;
-  border: solid 2px transparent;
-  border-radius: 50px;
-  transition: 0.3s;
-  background-size: 800% 800%;
-  -webkit-animation: gradient 16s ease infinite;
-  animation: gradient 16s ease infinite alternate;
+.app-link,
+.app-link1 {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
 }
 
-.apply-button-filled-purple-mission {
-  box-sizing: border-box;
-  border-radius: 50px;
-  padding: inherit;
-  position: relative;
-  width: 240px;
-  background-image: linear-gradient(76deg, #b143f6, #884fe5);
-  color: white;
-  border: solid 2px transparent;
-  border-radius: 50px;
-  transition: 0.3s;
-  background-size: 800% 800%;
-  -webkit-animation: gradient 16s ease infinite;
-  animation: gradient 16s ease infinite alternate;
+.download div,
+.mission-download div {
+  padding: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.app-link:hover,
+.app-link1:hover {
+  text-decoration: none;
+}
+
+.mission-download {
+  display: flex;
 }
 
 .apply-button {
@@ -413,30 +401,6 @@ li {
 .apply-button:hover {
   background-color: transparent;
   color: white;
-}
-
-.app-link,
-.app-link1 {
-  display: block;
-  text-decoration: none;
-  display: block;
-}
-
-.download div,
-.mission-download div {
-  padding: 8px;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
-.app-link:hover,
-.app-link1:hover {
-  text-decoration: none;
-}
-
-.mission-download {
-  display: flex;
-  justify-content: center;
 }
 
 .app-store,
@@ -480,23 +444,17 @@ li {
   color: white;
 }
 
+.app-store-content {
+  font-size: 1rem;
+  margin: 0px;
+}
+
 .app-store-content::before,
 .app-store-content1::before {
   font-family: "Icofont";
   margin-right: 10px;
   margin-top: -2px;
   content: "\e8a7";
-}
-
-.app-store-content {
-  font-size: 1rem;
-  margin: 0px;
-}
-
-.app-store-content1 {
-  text-align: center;
-  /* font-size: 0.9rem; */
-  margin: 0px;
 }
 
 .apple-store {
@@ -511,44 +469,78 @@ li {
   text-align: center;
 }
 
+@media only screen and (max-width: 900px) {
+  #how {
+    padding-top: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+}
+
 .step-left,
 .step-right {
   display: inline-grid;
-  margin: auto;
-  margin-bottom: 144px;
+  margin-bottom: 60px;
   grid-template-columns: 500px 1fr;
   grid-column-gap: 56px;
   text-align: left;
 }
+
 .step-right {
   grid-template-columns: 1fr 500px;
 }
 #step1 {
-  max-width: 280px;
+  max-width: 500px;
 }
 
 #step2 {
-  max-width: 460px;
+  max-width: 500px;
 }
 
 #step3 {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 #step4 {
-  max-width: 350px;
+  max-width: 500px;
 }
 
 #step5 {
-  max-width: 450px;
+  max-width: 500px;
 }
 
-.stepname {
-  margin-top: 40px;
+.stepname-left {
+  margin-top: 80px;
+  grid-template-columns: max-content 1fr;
+  font-size: 2em;
+  font-weight: 600;
+  margin-right: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+  .stepname-left {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+.stepname-right {
+  margin-top: 80px;
   display: grid;
   grid-template-columns: max-content 1fr;
   font-size: 2em;
   font-weight: 600;
+  margin-left: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+  .stepname-right {
+    margin-left: 0;
+    margin-top: 0;
+    display: inherit;
+  }
 }
 
 .stepnumber {
@@ -562,53 +554,236 @@ li {
   margin-right: 24px;
 }
 
-.steptext {
-  margin-top: 8px;
+.steptext1 {
+  font-size: 1.55em;
 }
 
-.stepdescription {
+.steptext {
+  margin-top: 25%;
+  font-size: 1.55em;
+}
+
+@media only screen and (max-width: 900px) {
+  .steptext {
+    margin-top: 100px;
+  }
+}
+
+.purpletext {
+  color: #a946f3;
+}
+
+.stepdescription-left {
+  color: #6c6c6c;
   font-size: 1.5em;
   font-weight: 400;
   margin-top: 16px;
-  margin-left: 80px;
+  margin-right: 70px;
 }
 
-/* testimonial */
-#testimonials {
+@media only screen and (max-width: 900px) {
+  .stepdescription-left {
+    margin-right: 0;
+  }
+}
+
+.stepdescription-right {
+  color: #6c6c6c;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-left: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+  .stepdescription-right {
+    margin-left: 0;
+  }
+}
+
+#full-width-image {
+  height: auto;
+  width: 100%;
+}
+/* about amori on about page description */
+#about-amori-grid {
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: left;
+  grid-row-gap: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  #about-amori-grid {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+#about-amori-cell {
+  padding-top: 0;
+  padding-left: 0;
+  margin-top: -50px;
+}
+
+@media only screen and (min-width: 901px) {
+  #about-amori-cell {
+    padding-top: 50px;
+    padding-left: 40px;
+    margin-top: 0;
+  }
+}
+
+#iphones-vertical-cell {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  #iphones-vertical-cell {
+    margin-top: 40px;
+  }
+}
+
+#about-amori-button-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  #about-amori-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    width: 100%;
+  }
+
+  .apply-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+#download-button-about-amori {
+  width: 240px;
+  margin-right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+#learn-button-about-amori {
+  width: 170px;
+  margin-left: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+#download-button-about-amori {
+  box-sizing: border-box;
+  background-image: linear-gradient(76deg, #b143f6, #884fe5);
+  color: white;
+  border: solid 2px transparent;
+  border-radius: 50px;
+  transition: 0.3s;
+  background-size: 800% 800%;
+  -webkit-animation: gradient 16s ease infinite;
+  animation: gradient 16s ease infinite alternate;
+}
+
+#apply-button-filled-purple {
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: inherit;
+  position: relative;
+  font-size: 0.65rem;
+  width: 180px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(76deg, #b143f6, #884fe5);
+  color: white;
+  border: solid 2px transparent;
+  border-radius: 50px;
+  transition: 0.3s;
+  background-size: 800% 800%;
+  -webkit-animation: gradient 16s ease infinite;
+  animation: gradient 16s ease infinite alternate;
+}
+
+/* mission description */
+#mission-description {
+  display: flex;
+  justify-content: center;
   padding-top: 156px;
   padding-bottom: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-top: -100px;
   background-color: #f0f2ff;
 }
 
-#testimonial-grid {
-  max-width: 1200px;
+#description-grid {
+  max-width: 1100px;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  text-align: center;
-  grid-row-gap: 64px;
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: left;
+  grid-row-gap: 30px;
 }
 
-.testimonial-cell {
-  max-width: 350px;
+#mission-title,
+#mission-title-small {
+  font-size: 4em;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.testimonial-cell img {
-  max-width: 150px;
+@media only screen and (min-width: 901px) {
+  #mission-title-small {
+    display: none;
+  }
 }
 
-.testimonial-name {
-  font-weight: 500;
-  margin: 24px 0;
+.description-cell {
+  max-width: 500px;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-/* mail */
+@media only screen and (max-width: 900px) {
+  .description-cell {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.description-cell img {
+  margin-top: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* linear gradient */
 #mail,
-#mission {
+#mission,
+#about-amori-div {
   margin: auto;
-  padding-top: 120px;
+  padding-top: 100px;
   width: 100%;
   background: rgb(240, 242, 255);
   background: linear-gradient(
@@ -617,11 +792,6 @@ li {
     rgba(240, 242, 255, 1) 100%
   );
   text-align: center;
-  justify-content: center;
-}
-
-#slogan {
-  font-size: 1.2rem;
 }
 
 #sub-grid {
@@ -695,17 +865,77 @@ li {
   max-width: 200px;
 }
 
-/* mission page */
+/* main header */
+#main-header {
+  padding: 0 24px;
+  text-align: center;
+}
+
+#apply-text {
+  font-size: 1.3rem;
+}
+
+#join-text {
+  margin-bottom: 20px;
+}
+
+#main-header-button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 0 24px;
+}
+
+#main-header-button-container a {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  #main-header-button-container a {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  #main-header-button-container a div {
+    width: 100%;
+  }
+}
+
+#main-header-button-container-about-pg {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#learn-button-main-header {
+  font-size: 0.65rem;
+  width: 180px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#apply-button-main-header {
+  font-size: 0.65rem;
+  width: 180px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* mission header */
 #mission-header {
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
 #mission-header p {
   margin-bottom: 40px;
   padding: 0 56px;
-  font-size: 1rem;
 }
 
 /* careers page */
@@ -1093,8 +1323,7 @@ form textarea {
     text-align: center;
   }
   .main-content {
-    padding: 0 24px;
-    padding-top: 200px;
+    padding-bottom: 65px;
   }
 
   .navbar-light .navbar-nav .nav-link,
@@ -1110,6 +1339,7 @@ form textarea {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    margin-bottom: 0;
   }
   h1 {
     text-align: center;
@@ -1156,27 +1386,19 @@ form textarea {
   #step5 {
     order: -1;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 0;
     max-width: 280px;
   }
 
   #step1 {
     max-width: 220px;
+    transform: translateX(30px);
+    margin-top: 90px;
+    margin-bottom: 40px;
   }
 
   #step5 {
     max-width: 360px;
-  }
-
-  .stepnumber {
-    width: 48px;
-    height: 48px;
-    padding-top: 6px;
-    margin-right: 20px;
-  }
-
-  .stepdescription {
-    margin-left: 70px;
   }
 
   #testimonials {
@@ -1239,6 +1461,11 @@ form textarea {
     margin-bottom: 32px;
   }
 
+  #iphones-vertical {
+    max-width: 100%;
+    height: auto;
+  }
+
   #mission-header {
     padding-bottom: 80px;
   }
@@ -1249,5 +1476,44 @@ form textarea {
 
   .mission-download {
     padding-bottom: 80px;
+  }
+}
+
+/* carousel code */
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-container {
+  display: flex;
+  width: calc(10 * 530);
+  animation: slide 15s linear infinite;
+}
+
+.slide {
+  width: 530px;
+  height: auto;
+  padding: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-5 * 530px));
+  }
+}
+
+#navBarInternInfo {
+  margin-top: 6px;
+}
+
+@media only screen and (max-width: 900px) {
+  #navBarInternInfo {
+    display: none;
   }
 }
