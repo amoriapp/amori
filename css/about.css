@@ -1471,6 +1471,7 @@ form textarea {
   #iphones-vertical {
     max-width: 100%;
     height: auto;
+    margin-left: -16px;
   }
 
   #mission-header {
