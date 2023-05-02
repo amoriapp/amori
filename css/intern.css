@@ -1267,6 +1267,7 @@ form textarea {
 
   #header {
     max-width: 100%;
+    margin-top: -20px;
   }
   #header img {
     max-width: 60vw;
@@ -1403,14 +1404,17 @@ form textarea {
 
 .slide-container {
   display: flex;
-  width: calc(10 * 530);
   animation: slide 15s linear infinite;
 }
 
 .slide {
-  width: 530px;
+  max-width: 530px;
+  min-width: 300px;
   height: auto;
   padding: 10px;
+
+  flex: 0 0 auto;
+  object-fit: scale-down;
 }
 
 @keyframes slide {

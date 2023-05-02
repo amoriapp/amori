@@ -488,6 +488,13 @@ li {
   text-align: left;
 }
 
+@media only screen and (max-width: 900px) {
+  .step-left,
+  .step-right {
+    margin-bottom: 40px;
+  }
+}
+
 .step-right {
   grid-template-columns: 1fr 500px;
 }
@@ -565,7 +572,7 @@ li {
 
 @media only screen and (max-width: 900px) {
   .steptext {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 }
 
@@ -1323,7 +1330,7 @@ form textarea {
     text-align: center;
   }
   .main-content {
-    padding-bottom: 65px;
+    padding-bottom: 45px;
   }
 
   .navbar-light .navbar-nav .nav-link,
@@ -1494,9 +1501,13 @@ form textarea {
 }
 
 .slide {
-  width: 530px;
+  max-width: 530px;
+  min-width: 300px;
   height: auto;
   padding: 10px;
+
+  flex: 0 0 auto;
+  object-fit: scale-down;
 }
 
 @keyframes slide {
