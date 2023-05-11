@@ -417,9 +417,9 @@ li {
 
 .app-link,
 .app-link1 {
-  display: block;
   text-decoration: none;
-  display: block;
+  text-align: center;
+  display: inline-block;
 }
 
 .download div,
@@ -1088,6 +1088,12 @@ form textarea {
   .blob-container {
     display: none;
   }
+
+
+  .download {
+    text-align: center;
+  }
+
   body {
     font-size: 12px;
     text-align: center;
@@ -1249,5 +1255,17 @@ form textarea {
 
   .mission-download {
     padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  
+
+  #logo {
+   max-height: 100px;
+  }
+
+  #animation {
+    font-size: 35px;
   }
 }
