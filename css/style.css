@@ -298,7 +298,7 @@ a:hover {
   /* grid-template-columns: minmax(200px, 440px) 1fr;*/
   justify-content: space-between;
   grid-column-gap: 40px;
-  margin-bottom: 120px;
+  /*margin-bottom: 120px;*/
 }
 
 #header h1 {
@@ -904,7 +904,8 @@ form textarea {
 
 /* footer */
 #footer-links {
-  padding-top: 120px;
+  /*padding-top: 120px;*/
+  padding-top: 50px;
   width: 70%;
   margin: auto;
   display: flex;
