@@ -274,9 +274,10 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 3em;
-  line-height: 1.4em;
+  font-family: 'FKRomanStandard-Regular', sans-serif;
+  font-size: 2em;
+  font-weight: 0;
+  line-height: 1.2em;
   text-align: center;
   margin-bottom: 80px;
 }
@@ -595,36 +596,39 @@ li {
   margin-left: 80px;
 }
 
-/* testimonial */
-#testimonials {
-  padding-top: 156px;
+/* press */
+#press {
+  padding-top: 150px;
   padding-bottom: 80px;
-  margin-top: -100px;
-  background-color: #f0f2ff;
 }
 
-#testimonial-grid {
-  max-width: 1200px;
-  margin: auto;
+#press-grid {
+  display: flex; /* Establishes a flex container */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 40px; /* Optional: adds space between images */
+  justify-content: center; /* Centers children horizontally */
+}
+
+.press-item {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  text-align: center;
-  grid-row-gap: 64px;
+  align-items: center;
+  justify-content: center;
 }
 
-.testimonial-cell {
-  max-width: 350px;
+.press-item img {
+  max-height: 40px; /* Ensures all images have the same maximum height */
+  max-width: 100px; /* Ensures all images have the same maximum height */
+  width: auto; /* Allows the width to adjust automatically */
+  object-fit: scale-down; /* Scales the image down to fit the container, preventing cropping */
+  flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
 }
 
-.testimonial-cell img {
-  max-width: 150px;
+#wsj {
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
-.testimonial-name {
-  font-weight: 500;
-  margin: 24px 0;
-}
 
 /* mail */
 #mail,
@@ -802,26 +806,60 @@ li {
 }
 
 @media only screen and (max-width: 900px) {
-  #careers-header {
-    font-size: 40px;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    margin-bottom: 24px;
+
+  #menu {
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
   }
 
-  .position-container {
-    display: flex;
-    flex-direction: column;
+  #header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
   }
-  .position-apply {
-    display: none;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 8px 20px;
-    margin-top: 12px;
-    width: fit-content;
+
+  #subtitle {
+    font-size: 1rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: 28px;
+    margin-bottom: 60px;
   }
+
+  #press-grid {
+    display: flex; /* Keeps the flex container */
+    flex-direction: column; /* Stacks flex items vertically */
+    align-items: center; /* Aligns items horizontally in the center, since it's a column layout now */
+    gap: 40px; /* Keeps space between items */
+    justify-content: center; /* Adjusts vertical alignment in the container, might be less relevant in column layout */
+    overflow-y: auto; /* Enables vertical scrolling if necessary */
+    margin-bottom: -30px;
+  }
+
+  .press-item img {
+    max-height: 50px;
+  }
+
+  #press h2 {
+    margin-bottom: 60px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+
+  #download-buttons {
+    display: flex; /* Keeps the flex container */
+    flex-direction: column; /* Stacks flex items vertically */
+    align-items: center; /* Aligns items horizontally in the center, since it's a column layout now */
+    gap: 10px; /* Keeps space between items */
+    justify-content: center; /* Adjusts vertical alignment in the container, might be less relevant in column layout */
+    overflow-y: auto; /* Enables vertical scrolling if necessary */
+  }
+
+  #ios-badge {
+    padding-left: 10px;
+  }
+
 }
 
 /* contact page */
@@ -953,8 +991,10 @@ form textarea {
 
 #copyright {
   text-align: center;
-  color: #bbbbbb;
-  font-size: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  font-size: 0.4rem;
   padding-bottom: 24px;
 }
 
@@ -1115,7 +1155,7 @@ form textarea {
     margin-left: 70px;
   }
 
-  #testimonials {
+  #press {
     padding: 0 24px;
     padding-top: 64px;
     padding-bottom: 100px;
@@ -1199,13 +1239,14 @@ form textarea {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+
+  #press-grid {
+    display: flex; /* Keeps the flex container */
+    flex-direction: column; /* Stacks flex items vertically */
+    align-items: center; /* Aligns items horizontally in the center, since it's a column layout now */
+    gap: 40px; /* Keeps space between items */
+    justify-content: center; /* Adjusts vertical alignment in the container, might be less relevant in column layout */
+    overflow-y: auto; /* Enables vertical scrolling if necessary */
+  }
   
-
-  #logo {
-   max-height: 100px;
-  }
-
-  #animation {
-    font-size: 35px;
-  }
 }
