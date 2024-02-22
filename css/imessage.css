@@ -10,8 +10,8 @@ body {
 
 @media only screen and (max-width: 767px) {
   body {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -41,9 +41,9 @@ h3 {
 
 @media only screen and (max-width: 767px) {
   .button {
-    padding: 18px 32px;
-    font-size: 18px;
-    line-height: 18px;
+    padding: 16px 30px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -67,7 +67,7 @@ h3 {
   justify-content: center;
   border-radius: 30px;
   height: 808px;
-  padding: 0 20px;
+  padding: 0 35px;
   background-color: #000;
   background-image: url("../img/illustration-cupid.svg");
   background-repeat: no-repeat;
@@ -98,14 +98,15 @@ h3 {
 .hero-box .hero-box-content .hero-box-content-title {
   font-family: "FK Roman Standard", sans-serif;
   font-size: 48px;
+  font-weight: 400;
   line-height: 53px;
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {
   .hero-box .hero-box-content .hero-box-content-title {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 
@@ -127,9 +128,16 @@ h3 {
 .instruction-section .instruction-section-header {
   font-family: "FK Roman Standard", sans-serif;
   font-size: 48px;
-  line-height: 53px;
   font-weight: 400;
+  line-height: 53px;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .instruction-section .instruction-section-header {
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 
 .instruction {
@@ -200,6 +208,18 @@ h3 {
   background: #6c62e4;
 }
 
+@media only screen and (max-width: 767px) {
+  .instruction
+    .instruction-step
+    .instruction-step-texts
+    .instruction-step-number-badge {
+    min-width: 45px;
+    height: 45px;
+    font-size: 26px;
+    line-height: 45px;
+  }
+}
+
 .instruction .instruction-step .instruction-step-texts .instruction-step-title {
   font-size: 32px;
   line-height: 48px;
@@ -211,7 +231,7 @@ h3 {
     .instruction-step
     .instruction-step-texts
     .instruction-step-title {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 38px;
     text-align: center;
   }
@@ -231,8 +251,8 @@ h3 {
     .instruction-step
     .instruction-step-texts
     .instruction-step-description {
-    font-size: 22px;
-    line-height: 34px;
+    font-size: 14px;
+    line-height: 24px;
     text-align: center;
   }
 }

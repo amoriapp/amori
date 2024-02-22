@@ -50,6 +50,12 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  .hide-for-small {
+    display: none !important;
+  }
+}
+
 i.icon-apple {
   content: url("../img/icon-apple.svg");
   display: inline-block;
