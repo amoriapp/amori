@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row .column {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+.small-12 {
+  width: 100%;
+}
+
+i.icon-apple {
+  content: url("../img/icon-apple.svg");
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -8px;
+}

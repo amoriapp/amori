@@ -1,0 +1,269 @@
+body {
+  background: #000;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 67px;
+  font-weight: 700;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 24px 38px;
+  background: #6c62e4;
+  border-radius: 100px;
+  font-size: 20px;
+  line-height: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.button > i {
+  margin-right: 18px;
+}
+
+.hero-section {
+  padding-top: 59px;
+  padding-bottom: 69px;
+  background-color: #fff;
+  background-image: url("../img/pattern-hero.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.hero-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  height: 808px;
+  padding: 0 20px;
+  background-color: #000;
+  background-image: url("../img/illustration-cupid.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 96px left 126px;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-box {
+    background-image: none;
+  }
+}
+
+.hero-box .hero-box-logo {
+  position: absolute;
+  top: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-box .hero-box-content {
+  max-width: 506px;
+  text-align: center;
+}
+
+.hero-box .hero-box-content .hero-box-content-title {
+  font-family: "FK Roman Standard", sans-serif;
+  font-size: 48px;
+  line-height: 53px;
+  margin-bottom: 30px;
+}
+
+.hero-box .hero-box-content .hero-box-content-description {
+  margin-bottom: 60px;
+}
+
+.instruction-section {
+  padding-top: 112px;
+  padding-bottom: 151px;
+}
+
+.instruction-section .instruction-section-header {
+  font-family: "FK Roman Standard", sans-serif;
+  font-size: 48px;
+  line-height: 53px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 1070px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px;
+}
+
+@media only screen and (max-width: 767px) {
+  .instruction {
+    gap: 100px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+.instruction .instruction-step {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+@media only screen and (max-width: 767px) {
+  .instruction .instruction-step {
+    flex-direction: column !important;
+    gap: 40px;
+  }
+}
+
+.instruction .instruction-step.ltr {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.instruction .instruction-step.rtl {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.instruction .instruction-step .instruction-step-texts {
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .instruction .instruction-step .instruction-step-texts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.instruction
+  .instruction-step
+  .instruction-step-texts
+  .instruction-step-number-badge {
+  display: inline-block;
+  min-width: 56px;
+  height: 56px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+  border-radius: 28px;
+  text-align: center;
+  background: #6c62e4;
+}
+
+.instruction .instruction-step .instruction-step-texts .instruction-step-title {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+  .instruction
+    .instruction-step
+    .instruction-step-texts
+    .instruction-step-title {
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+  }
+}
+
+.instruction
+  .instruction-step
+  .instruction-step-texts
+  .instruction-step-description {
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .instruction
+    .instruction-step
+    .instruction-step-texts
+    .instruction-step-description {
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .instruction .instruction-step .instruction-step-image img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+footer {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  padding-top: 50px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 9px;
+}
+
+.footer-left {
+  text-align: left;
+  max-width: 50vw;
+}
+
+.footer-right {
+  text-align: right;
+  max-width: 50vw;
+}
+
+.fab {
+  font-size: 18px;
+  padding-right: 12px;
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-size: 9.6px;
+  margin-bottom: 24px;
+}
+
+#privacy,
+#terms,
+#careers {
+  display: inline-block;
+  text-align: left;
+  float: none;
+  padding: 8px 10px;
+  color: var(--main-accent-color);
+}
+
+#contact {
+  display: inline-block;
+  text-align: right;
+  float: none;
+  padding: 8px 10px;
+  color: #ffff;
+}
