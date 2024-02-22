@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "FK Roman Standard";
+  src: url("../webfonts/FKRomanStandard-Medium.woff2") format("woff2"),
+    url("../webfonts/FKRomanStandard-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FK Roman Standard";
+  src: url("../webfonts/FKRomanStandard-Regular.woff2") format("woff2"),
+    url("../webfonts/FKRomanStandard-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *:before,
 *:after {
